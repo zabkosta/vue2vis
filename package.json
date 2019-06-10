@@ -30,7 +30,7 @@
     "visjs"
   ],
   "dependencies": {
-    "vis": "^4.21.0"
+    "vis": "git+https://github.com/visjs/vis_original.git"
   },
   "peerDependencies": {
     "vue": "~2.x"
