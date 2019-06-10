@@ -14,9 +14,9 @@ const mountVisData = (vm, propName) => {
     const callback = (value) => {
       if (Array.isArray(value)) {
         const newIds = new DataSet(value).getIds();
-        const diff = arrayDiff(vm.visData[propName].getIds(), newIds);
-        vm.visData[propName].update(value);
+        const diff = arrayDiff(vm.visData[propName].getIds(), newIds);        
         vm.visData[propName].remove(diff);
+        vm.visData[propName].update(value);
       }
     };
 
